@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="visor">
+                <input id="visorL" type="text" disabled="disabled">
+            </div>
+
+            <div id="botoes">
+                <div id="linha1">
+                    <button id="clean" onclick="operacao('acao','c')" class="bg">C</button>
+                    <button id="dividir" onclick="operacao('acao','/')">/</button>
+                    <button id="multiplicar" onclick="operacao('acao','*')">x</button>
+                </div>
+                <div id="linha2">
+                    <button id="sete" onclick="operacao('valor','7')">7</button>
+                    <button id="oito" onclick="operacao('valor','8')">8</button>
+                    <button id="sete" onclick="operacao('valor','9')">9</button>
+                    <button id="menos" onclick="operacao('acao','-')">-</button>
+                </div>
+                <div id="linha3">
+                    <button id="quatro" onclick="operacao('valor','4')">4</button>
+                    <button id="cinco" onclick="operacao('valor','5')">5</button>
+                    <button id="seis" onclick="operacao('valor','6')">6</button>
+                    <button id="mais" onclick="operacao('acao','+')">+</button> 
+                </div>
+                <div id="linha4">
+                    <button id="um" onclick="operacao('valor','1')">1</button>
+                    <button id="dois" onclick="operacao('valor','2')">2</button>
+                    <button id="tres" onclick="operacao('valor','3')">3</button> 
+                </div>
+                <button id="igual" onclick="operacao('acao','=')">=</button> 
+                <div id="linha5">
+                    <button class="bg" id="zero" onclick="operacao('valor','0')">0</button> 
+                    <button id="ponto" onclick="operacao('valor','.')">.</button> 
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
